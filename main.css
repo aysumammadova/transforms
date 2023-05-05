@@ -1,0 +1,80 @@
+.transitiontwod{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    max-width: 95%;
+    flex-wrap: wrap;
+}
+.btn{
+    margin-left: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    color:#000000;
+    border-radius: 3px;
+    margin-top: 40px;
+    transition: 0.4s;
+    
+}
+
+.grow:hover{
+    transform: scale(1.2);
+}
+
+.shrink:hover{
+    cursor: pointer;
+    transform: scale(0.8);
+} 
+
+.rotate:hover{
+    transform: rotate(10deg);
+}
+
+.rotate-grow:hover{
+    transform: scale(1.1) rotate(10deg);
+}
+
+.float:hover{
+    transform: translateY(-20%);
+}
+.sink:hover{
+    transform: translateY(20%);
+}
+.skew:hover{
+    transform: skew(-10deg);
+}
+.skewforward:hover{
+    transform: skew(-10deg,0);
+}
+.skewbackward:hover{
+    transform: skew(10deg,0);
+}
+.forward:hover{    
+    transform: translateX(8px);
+}
+.backward:hover{
+    transform: translateX(-8px);
+}
+
+/* .pulse{
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    border-radius: 3px;
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ;
+
+}
+
+.pulse:hover{
+    -webkit-transform: perspective(1px) translateZ(1);
+    transform: perspective(1px) translateZ(-1);
+} */
